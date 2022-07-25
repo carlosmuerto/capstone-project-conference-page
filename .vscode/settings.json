@@ -4,6 +4,11 @@
   "editor.detectIndentation": false,
   "css.validate": false,
   "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",
