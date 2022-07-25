@@ -26,7 +26,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://carlosmuerto.github.io/capstone-project-conference-page/)
 
 ## Authors
 
