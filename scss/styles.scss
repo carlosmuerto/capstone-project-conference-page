@@ -2,11 +2,64 @@ $primary-color: #272a32;
 $accent-color: #ec5242;
 $background-color: #d3d3d3;
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* > a {
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: $accent-color;
+.wrapper {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  line-height: 1rem;
+  position: fixed;
+  background-color: whitesmoke;
+  width: 100%;
+
+  nav.navbar {
+    background-color: yellow;
+    padding: 4px;
+    display: none;
+
+    ul {
+      background-color: blue;
+      padding: 4px;
+
+      li {
+        background-color: red;
+        padding: 4px;
+        margin: 0;
+        list-style: none;
+      }
+    }
+  }
+
+  #menu-btn {
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  #logo {
+    display: none;
+  }
 }
