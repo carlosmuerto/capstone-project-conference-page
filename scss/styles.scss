@@ -36,21 +36,35 @@ header {
   width: 100%;
 
   nav.navbar {
-    background-color: yellow;
+    background-color: whitesmoke;
     padding: 4px;
-    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    transition: left 0.25s ease-in-out;
 
     ul {
-      background-color: blue;
-      padding: 4px;
-
       li {
-        background-color: red;
-        padding: 4px;
-        margin: 0;
+        padding: 1rem;
         list-style: none;
+        text-align: center;
+      }
+
+      li#menu-btn-close {
+        justify-self: end;
+        text-align: right;
       }
     }
+  }
+
+  nav.navbar.show {
+    left: 0;
   }
 
   #menu-btn {
