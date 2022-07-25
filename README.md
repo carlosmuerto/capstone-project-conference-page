@@ -1,6 +1,6 @@
 # Capstone Project - Conference Page
 
-> In this capstone project I are going to build is based on an online website for a conference. MIcroverse provide some design guidelines for me to create the website, but I must personalize the content, i.e., instead of a conference you can build a website for a concert or for a web development course. It's very important the I personalize my project so that I have something unique in my portfolio to share with potential employers during job searching.
+> In this capstone project I are going to build is based on an online website for a conference. Microverse provide some design guidelines for me to create the website, but I must personalize the content, i.e., instead of a conference you can build a website for a concert or for a web development course. It's very important the I personalize my project so that I have something unique in my portfolio to share with potential employers during job searching.
 
 ![screenshot](./app_screenshot.png)
 
