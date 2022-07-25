@@ -59,3 +59,45 @@ header #menu-btn i {
 header #logo {
   display: none;
 }
+
+main {
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main section.headline {
+  height: calc(100vh - 2rem - 1.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main section.headline .title {
+  color: #ec5242;
+}
+main section.headline .box {
+  margin: 0.5rem;
+  border: #d3d3d3 solid 1px;
+  padding: 0.25rem;
+  font-size: 0.8rem;
+}
+main section.headline #date {
+  color: #272a32;
+}
+main section.testing h1 {
+  color: #ec5242;
+}
