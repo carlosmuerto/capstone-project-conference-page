@@ -22,6 +22,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
 
     .title {
       color: $accent-color;
@@ -29,13 +30,19 @@ main {
 
     .box {
       margin: 0.5rem;
-      border: #d3d3d3 solid 1px;
+      border: white solid 2px;
+      border-radius: 2px;
       padding: 0.25rem;
       font-size: 0.8rem;
     }
 
     #date {
       color: $primary-color;
+      align-self: start;
+
+      span {
+        font-size: 0.8rem;
+      }
     }
   }
 
