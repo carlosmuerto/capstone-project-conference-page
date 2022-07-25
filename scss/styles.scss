@@ -10,3 +10,38 @@ $background-color: #d3d3d3;
 h1 {
   color: $accent-color;
 }
+
+main {
+  margin-top: calc(2rem + 1.5rem);
+  display: flex;
+  flex-direction: column;
+
+  section.headline {
+    height: calc(100vh - 2rem - 1.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      color: $accent-color;
+    }
+
+    .box {
+      margin: 0.5rem;
+      border: #d3d3d3 solid 1px;
+      padding: 0.25rem;
+      font-size: 0.8rem;
+    }
+
+    #date {
+      color: $primary-color;
+    }
+  }
+
+  section.testing {
+    h1 {
+      color: $accent-color;
+    }
+  }
+}
