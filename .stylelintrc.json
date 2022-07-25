@@ -1,0 +1,49 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-css-modules"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-csstree-validator"
+  ],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen"
+        ]
+      }
+    ],
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen"
+        ]
+      }
+    ],
+    "csstree/validator": {
+      "syntaxExtensions": [
+        "sass"
+      ]
+    }
+  },
+  "ignoreFiles": [
+    "build/**",
+    "dist/**",
+    "**/reset*.css",
+    "**/bootstrap*.css",
+    "**/*.js",
+    "**/*.jsx"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "capstone-project-conference-page",
+  "version": "0.0.1",
+  "description": "> In this capstone project I are going to build is based on an online website for a conference. Microverse provide some design guidelines for me to create the website, but I must personalize the content, i.e., instead of a conference you can build a website for a concert or for a web development course. It's very important the I personalize my project so that I have something unique in my portfolio to share with potential employers during job searching.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosmuerto/capstone-project-conference-page.git"
+  },
+  "keywords": [
+    "Capstone Project",
+    "Microverse",
+    "Conference Page"
+  ],
+  "author": "Carlos Vivas <cavivasnieto@gmail.com> (https://github.com/carlosmuerto)",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/carlosmuerto/capstone-project-conference-page/issues"
+  },
+  "homepage": "https://github.com/carlosmuerto/capstone-project-conference-page#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^7.1.1",
+    "sass": "^1.54.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-csstree-validator": "^2.0.0",
+    "stylelint-scss": "^4.3.0"
+  }
+}
