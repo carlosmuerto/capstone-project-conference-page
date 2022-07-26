@@ -118,8 +118,6 @@ main section.headline .box {
 }
 main section.headline #date {
   color: #272a32;
-  -ms-flex-item-align: start;
-      align-self: start;
 }
 main section.headline #date span {
   font-size: 0.8rem;
