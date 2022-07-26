@@ -104,18 +104,25 @@ main section.headline {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: whitesmoke;
 }
 main section.headline .title {
   color: #ec5242;
 }
 main section.headline .box {
   margin: 0.5rem;
-  border: #d3d3d3 solid 1px;
+  border: white solid 2px;
+  border-radius: 2px;
   padding: 0.25rem;
   font-size: 0.8rem;
 }
 main section.headline #date {
   color: #272a32;
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+main section.headline #date span {
+  font-size: 0.8rem;
 }
 main section.testing h1 {
   color: #ec5242;
