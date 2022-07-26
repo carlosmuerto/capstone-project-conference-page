@@ -1,6 +1,6 @@
 $primary-color: #272a32;
+$secundary-color: #d3d3d3;
 $accent-color: #ec5242;
-$background-color: #d3d3d3;
 
 html,
 body {
@@ -26,6 +26,7 @@ body {
 }
 
 header {
+  z-index: 9999;
   align-items: flex-start;
   background-color: whitesmoke;
   display: flex;
@@ -92,6 +93,13 @@ header {
   padding-top: 3rem;
 }
 
+@mixin content-item-flex-item {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -119,17 +127,17 @@ main {
       grid-template: auto / 1fr;
 
       .content-item {
-        align-content: center;
-        align-items: center;
-        background-color: rgba($background-color, 0.2);
-        display: flex;
-        justify-content: center;
+        @include content-item-flex-item;
+
+        background-color: rgba($secundary-color, 0.2);
 
         .img {
           flex: 0 0 5rem;
           margin: auto;
           min-width: 5rem;
           padding: 0;
+          display: flex;
+          justify-content: center;
 
           img {
             display: block;
@@ -201,10 +209,101 @@ main {
   section.features {
     @include section-flex;
 
-    background-color: $background-color;
+    background-color: whitesmoke;
 
     .title {
       @include section-title;
+
+      h2 {
+        color: #272a32;
+        text-align: center;
+      }
+    }
+
+    .content {
+      display: grid;
+      gap: 0.25rem;
+      grid-template: auto / 1fr;
+
+      .content-item {
+        @include content-item-flex-item;
+
+        .img {
+          flex: 0 0 7rem;
+          min-width: 7rem;
+          min-height: 7rem;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          position: relative;
+
+          img.decorator-img {
+            background-color: #272a32;
+            position: absolute;
+            right: 10%;
+            top: 10%;
+            height: 40%;
+            width: 40%;
+            z-index: 1;
+          }
+
+          img.main-img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 70%;
+            width: 70%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+          }
+        }
+
+        .body {
+          h3 {
+            color: $primary-color;
+            font-size: 1rem;
+          }
+
+          h4 {
+            color: $accent-color;
+            font-size: 0.75rem;
+          }
+
+          .divider {
+            background-color: $secundary-color;
+            height: 2px;
+            margin: 0.25rem 0;
+            width: 3rem;
+          }
+
+          p {
+            color: $primary-color;
+            font-size: 0.75rem;
+            text-align: justify;
+          }
+        }
+      }
+    }
+
+    .more-btn {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+
+      button {
+        background-color: whitesmoke;
+        border: $secundary-color solid 2px;
+        border-radius: 5px;
+        color: $primary-color;
+        font-size: 1rem;
+        padding: 1rem;
+        width: 100%;
+
+        .more-btn-chevron-down {
+          color: $accent-color;
+        }
+      }
     }
   }
 
