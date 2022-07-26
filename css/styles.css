@@ -87,11 +87,95 @@ main {
           flex-direction: column;
   margin-top: 3.5rem;
 }
+main .section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: whitesmoke;
+}
 main .divider {
   background-color: #ec5242;
   height: 4px;
   margin: 1.25rem 0;
   width: 3rem;
+}
+main section.about-logo {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  background-color: white;
+}
+main section.about-logo .title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+}
+main section.about-logo .title h2 {
+  color: #272a32;
+  font-size: 1.25rem;
+  width: 80%;
+}
+main section.about-logo .title p {
+  color: #272a32;
+  font-size: 0.75rem;
+  width: 80%;
+  text-transform: capitalize;
+}
+main section.about-logo .title .divider {
+  background-color: #ec5242;
+  height: 1px;
+  margin: 0.5rem 0;
+  width: 1rem;
+}
+main section.about-logo .box {
+  border: #d3d3d3 solid 1px;
+  background-color: white;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  margin: 2rem 3rem;
+  width: 80%;
+  max-width: 20rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main section.about-logo .box img {
+  display: block;
+  margin: auto;
+  width: 100%;
 }
 main section.categories {
   -webkit-box-align: stretch;
@@ -376,7 +460,45 @@ main section.headline.headline-about {
   text-align: center;
 }
 main section.headline.headline-about .title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
   color: #ec5242;
+}
+main section.headline.headline-about .box {
+  border: #d3d3d3 solid 2px;
+  background-color: white;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+main section.headline.headline-about .box .box-content {
+  color: #272a32;
+}
+main section.headline.headline-about .contact-info {
+  padding-top: 2rem;
+  color: #272a32;
+  font-size: 0.8rem;
+  width: 80%;
+}
+main section.headline.headline-about .contact-info .email {
+  color: #ec5242;
+  font-weight: bold;
 }
 main section.testing h1 {
   color: #ec5242;
