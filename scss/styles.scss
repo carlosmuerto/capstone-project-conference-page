@@ -91,10 +91,6 @@ main {
     align-items: center;
     background-color: whitesmoke;
 
-    .title {
-      color: $accent-color;
-    }
-
     .box {
       margin: 0.5rem;
       border: white solid 2px;
@@ -109,6 +105,20 @@ main {
       span {
         font-size: 0.8rem;
       }
+    }
+  }
+
+  section.headline.headline-home {
+    .title {
+      color: red;
+    }
+  }
+
+  section.headline.headline-about {
+    text-align: center;
+
+    .title {
+      color: $accent-color;
     }
   }
 
