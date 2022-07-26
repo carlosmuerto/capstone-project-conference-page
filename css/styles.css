@@ -177,52 +177,6 @@ main section.about-logo .box img {
   margin: auto;
   width: 100%;
 }
-main section.about-images {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-}
-main section.about-images .title {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-transform: uppercase;
-}
-main section.about-images .title h2 {
-  color: #272a32;
-  text-align: center;
-}
-main section.about-images .title p {
-  color: #272a32;
-  font-size: 0.75rem;
-  width: 80%;
-  text-transform: capitalize;
-  text-align: center;
-}
-main section.about-images .title p a {
-  color: #ec5242;
-  font-weight: bold;
-}
 main section.categories {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -336,6 +290,116 @@ main section.categories .join-btn button {
   font-size: 1rem;
   padding: 1rem;
   width: 80%;
+}
+main section.about-images {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  gap: 2rem;
+}
+main section.about-images .title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+}
+main section.about-images .title h2 {
+  color: #272a32;
+  text-align: center;
+}
+main section.about-images .title p {
+  color: #272a32;
+  font-size: 0.75rem;
+  width: 80%;
+  text-transform: capitalize;
+  text-align: center;
+}
+main section.about-images .title p a {
+  color: #ec5242;
+  font-weight: bold;
+}
+main section.about-images .content {
+  display: grid;
+  gap: 1rem;
+  grid-template: auto/1fr;
+}
+main section.about-images .content .content-item {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main section.about-images .content .content-item .img {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 40rem;
+  width: 80%;
+  position: relative;
+}
+main section.about-images .content .content-item .img img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.about-images .content .content-item .img .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 42, 50, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+main section.about-images .content .content-item .img .overlay .generated-name {
+  color: #d3d3d3;
+  font-size: 1.5rem;
+  text-align: center;
 }
 main section.headline {
   -webkit-box-align: center;
