@@ -171,6 +171,32 @@ main {
     }
   }
 
+  section.about-images {
+    @include section-flex;
+
+    .title {
+      @include section-title;
+
+      h2 {
+        color: $primary-color;
+        text-align: center;
+      }
+
+      p {
+        color: $primary-color;
+        font-size: 0.75rem;
+        width: 80%;
+        text-transform: capitalize;
+        text-align: center;
+
+        a {
+          color: $accent-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
   section.categories {
     @include section-flex;
 
@@ -274,7 +300,7 @@ main {
       @include section-title;
 
       h2 {
-        color: #272a32;
+        color: $primary-color;
         text-align: center;
       }
     }
@@ -297,7 +323,7 @@ main {
           position: relative;
 
           img.decorator-img {
-            background-color: #272a32;
+            background-color: $primary-color;
             position: absolute;
             right: 10%;
             top: 10%;

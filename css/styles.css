@@ -177,6 +177,52 @@ main section.about-logo .box img {
   margin: auto;
   width: 100%;
 }
+main section.about-images {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+main section.about-images .title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+}
+main section.about-images .title h2 {
+  color: #272a32;
+  text-align: center;
+}
+main section.about-images .title p {
+  color: #272a32;
+  font-size: 0.75rem;
+  width: 80%;
+  text-transform: capitalize;
+  text-align: center;
+}
+main section.about-images .title p a {
+  color: #ec5242;
+  font-weight: bold;
+}
 main section.categories {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
