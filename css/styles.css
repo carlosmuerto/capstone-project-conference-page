@@ -59,6 +59,15 @@ header nav.navbar {
   transition: left 0.25s ease-in-out;
   width: calc(100% - 3rem);
 }
+header nav.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 header nav.navbar ul li {
   list-style: none;
   padding: 1rem;
@@ -70,9 +79,23 @@ header nav.navbar ul li > * {
   font-weight: bold;
   font-size: 1.25rem;
 }
+header nav.navbar ul li.nav-item > * {
+  display: block;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+header nav.navbar ul li.nav-item > *:hover,
+header nav.navbar ul li.nav-item > *.active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ec5242;
+}
 header nav.navbar ul li#menu-btn-close {
   justify-self: end;
   text-align: right;
+  cursor: pointer;
 }
 header nav.navbar.show {
   left: 0;
@@ -82,6 +105,52 @@ header #menu-btn i {
 }
 header #logo {
   display: none;
+}
+@media (min-width: 768px) {
+  header nav.navbar {
+    position: initial;
+    left: -100%;
+    top: 0;
+    height: initial;
+    width: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: white;
+  }
+  header nav.navbar ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header nav.navbar ul li {
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: none;
+  }
+  header nav.navbar ul li > * {
+    color: #272a32;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  header nav.navbar ul li#menu-btn-close {
+    display: none;
+  }
+  header nav.navbar.show {
+    left: initial;
+  }
+  header #menu-btn {
+    display: none;
+  }
+  header #logo {
+    display: initial;
+  }
+  header .only-mobile {
+    display: none;
+  }
 }
 
 main {
