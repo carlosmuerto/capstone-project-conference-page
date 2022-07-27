@@ -51,7 +51,7 @@ function buildFeatureContent() {
 }
 
 function showMoreFeaturePersons() {
-  featuredPersonsMax.textContent += 2;
+  featuredPersonsMax.textContent = Number.parseInt(featuredPersonsMax.textContent, 10) + 2;
   buildFeatureContent();
 }
 
