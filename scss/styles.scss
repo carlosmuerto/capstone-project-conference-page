@@ -766,6 +766,12 @@ footer {
     gap: 1rem;
     padding: 2rem 0;
 
+    @media (min-width: $breakpoint-tablet) {
+      grid-template: auto / 15rem 1fr;
+      gap: 1rem;
+      padding: 2rem 0;
+    }
+
     .footer-logo {
       display: flex;
       align-items: center;
@@ -773,8 +779,9 @@ footer {
 
       .footer-img {
         display: block;
-        margin: auto;
-        width: 80%;
+        aspect-ratio: 3 / 1;
+        object-fit: cover;
+        width: 100%;
       }
     }
 
@@ -784,6 +791,10 @@ footer {
       justify-content: center;
       align-items: flex-start;
       padding: 0 10%;
+
+      @media (min-width: $breakpoint-tablet) {
+        padding: 0;
+      }
 
       h5 {
         font-size: 1rem;
