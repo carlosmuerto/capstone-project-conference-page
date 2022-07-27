@@ -5,7 +5,7 @@ body {
   scroll-behavior: smooth;
 }
 
-.base {
+.internal {
   display: none !important;
 }
 
@@ -267,6 +267,7 @@ main .more-btn button {
   font-size: 1rem;
   padding: 1rem;
   width: 100%;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   main .more-btn button {

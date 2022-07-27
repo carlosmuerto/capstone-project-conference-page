@@ -1,3 +1,3 @@
-import init from './js/inits.js';
+import init from './js/init.js';
 
 window.addEventListener('load', init);
