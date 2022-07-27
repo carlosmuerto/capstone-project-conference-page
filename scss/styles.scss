@@ -39,6 +39,7 @@ body {
 }
 
 * {
+  font-family: Lato, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -150,12 +151,15 @@ header {
       li.nav-item {
         > * {
           display: block;
-          transition: transform 0.1s ease-in-out;
+          transition: transform 0.1s ease-in-out, color 0.1s ease-in;
         }
 
-        > *:hover,
-        > *.active {
+        > *:hover {
           transform: scale(1.1);
+          color: $accent-color;
+        }
+
+        > *.active {
           color: $accent-color;
         }
       }
@@ -330,14 +334,12 @@ main {
         @include content-item-flex-item;
 
         border: transparent solid 2px;
-        transition: border 1s ease-in-out;
+        background-color: rgba($secundary-color, 0.2);
 
         @media (min-width: $breakpoint-tablet) {
           flex-direction: column;
           text-align: center;
         }
-
-        background-color: rgba($secundary-color, 0.2);
 
         .img {
           flex: 0 0 5rem;
@@ -371,7 +373,11 @@ main {
         }
       }
 
-      .content-item:hover {
+      .content-item.content-item-with-hover {
+        transition: border 1s ease-in-out;
+      }
+
+      .content-item.content-item-with-hover:hover {
         border: white solid 2px;
       }
     }
