@@ -112,6 +112,10 @@ header {
   }
 
   @media (min-width: $breakpoint-tablet) {
+    .header-logo {
+      display: initial;
+    }
+
     nav.navbar {
       position: initial;
       left: -100%;
