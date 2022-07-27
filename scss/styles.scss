@@ -258,6 +258,31 @@ main {
     width: 3rem;
   }
 
+  .more-btn {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+
+    button {
+      background-color: white;
+      border: $secundary-color solid 2px;
+      border-radius: 5px;
+      color: $primary-color;
+      font-size: 1rem;
+      padding: 1rem;
+      width: 100%;
+
+      @media (min-width: $breakpoint-tablet) {
+        max-width: 40%;
+      }
+
+      .more-btn-chevron-down {
+        color: $accent-color;
+      }
+    }
+  }
+
   section.about-logo {
     @include section-flex;
 
@@ -679,31 +704,6 @@ main {
             font-size: 0.75rem;
             text-align: justify;
           }
-        }
-      }
-    }
-
-    .more-btn {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      padding-top: 2rem;
-
-      button {
-        background-color: white;
-        border: $secundary-color solid 2px;
-        border-radius: 5px;
-        color: $primary-color;
-        font-size: 1rem;
-        padding: 1rem;
-        width: 100%;
-
-        @media (min-width: $breakpoint-tablet) {
-          max-width: 40%;
-        }
-
-        .more-btn-chevron-down {
-          color: $accent-color;
         }
       }
     }

@@ -242,6 +242,36 @@ main .divider {
   margin: 1.25rem 0;
   width: 3rem;
 }
+main .more-btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2rem;
+}
+main .more-btn button {
+  background-color: white;
+  border: #d3d3d3 solid 2px;
+  border-radius: 5px;
+  color: #272a32;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  main .more-btn button {
+    max-width: 40%;
+  }
+}
+main .more-btn button .more-btn-chevron-down {
+  color: #ec5242;
+}
 main section.about-logo {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -859,36 +889,6 @@ main section.features .content .content-item .body p {
   color: #272a32;
   font-size: 0.75rem;
   text-align: justify;
-}
-main section.features .more-btn {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 2rem;
-}
-main section.features .more-btn button {
-  background-color: white;
-  border: #d3d3d3 solid 2px;
-  border-radius: 5px;
-  color: #272a32;
-  font-size: 1rem;
-  padding: 1rem;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  main section.features .more-btn button {
-    max-width: 40%;
-  }
-}
-main section.features .more-btn button .more-btn-chevron-down {
-  color: #ec5242;
 }
 @media (min-width: 768px) {
   main section.headline.headline-home {
