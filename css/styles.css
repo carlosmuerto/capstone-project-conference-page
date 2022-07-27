@@ -643,6 +643,11 @@ main section.about-images .content {
   gap: 1rem;
   grid-template: auto/1fr;
 }
+@media (min-width: 768px) {
+  main section.about-images .content {
+    grid-template: auto/repeat(2, 1fr);
+  }
+}
 main section.about-images .content .content-item {
   -ms-flex-line-pack: center;
       align-content: center;
@@ -668,8 +673,6 @@ main section.about-images .content .content-item .img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 40rem;
-  width: 80%;
   position: relative;
 }
 main section.about-images .content .content-item .img img {
@@ -684,7 +687,7 @@ main section.about-images .content .content-item .img .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(39, 42, 50, 0.75);
+  background-color: rgba(236, 82, 66, 0.75);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,6 +697,8 @@ main section.about-images .content .content-item .img .overlay {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
@@ -702,6 +707,9 @@ main section.about-images .content .content-item .img .overlay .generated-name {
   font-size: 1.5rem;
   padding: 0 2rem;
   text-align: center;
+}
+main section.about-images .content .content-item .img .overlay:hover {
+  background-color: rgba(39, 42, 50, 0.75);
 }
 main section.headline {
   background-color: whitesmoke;

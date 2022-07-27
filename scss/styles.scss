@@ -510,14 +510,16 @@ main {
       gap: 1rem;
       grid-template: auto / 1fr;
 
+      @media (min-width: $breakpoint-tablet) {
+        grid-template: auto / repeat(2, 1fr);
+      }
+
       .content-item {
         @include content-item-flex-item;
 
         .img {
           @include content-item-flex-item;
 
-          max-width: 40rem;
-          width: 80%;
           position: relative;
 
           img {
@@ -532,10 +534,11 @@ main {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: rgba($primary-color, 0.75);
+            background-color: rgba($accent-color, 0.75);
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: background-color 0.5s ease-in;
             cursor: zoom-in;
 
             .generated-name {
@@ -544,6 +547,10 @@ main {
               padding: 0 2rem;
               text-align: center;
             }
+          }
+
+          .overlay:hover {
+            background-color: rgba($primary-color, 0.75);
           }
         }
       }
