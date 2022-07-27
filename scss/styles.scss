@@ -37,8 +37,9 @@ header {
   position: fixed;
   width: 100%;
 
-  #logo {
+  .header-logo {
     position: relative;
+    display: none;
 
     img {
       position: absolute;
@@ -110,10 +111,6 @@ header {
     }
   }
 
-  #logo {
-    display: none;
-  }
-
   @media (min-width: $breakpoint-tablet) {
     nav.navbar {
       position: initial;
@@ -135,8 +132,8 @@ header {
 
           > * {
             color: $primary-color;
-            font-weight: bold;
-            font-size: 1.25rem;
+            font-weight: initial;
+            font-size: 1rem;
           }
         }
 
