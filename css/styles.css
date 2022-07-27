@@ -373,6 +373,9 @@ main section.categories .content .content-item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: transparent solid 2px;
+  -webkit-transition: border 1s ease-in-out;
+  transition: border 1s ease-in-out;
   background-color: rgba(211, 211, 211, 0.2);
 }
 @media (min-width: 768px) {
@@ -425,6 +428,9 @@ main section.categories .content .content-item p.summary {
           flex-grow: 4;
   -ms-flex-negative: 1;
       flex-shrink: 1;
+}
+main section.categories .content .content-item:hover {
+  border: white solid 2px;
 }
 main section.categories .categories-btn {
   -webkit-box-align: center;

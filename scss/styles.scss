@@ -329,6 +329,9 @@ main {
       .content-item {
         @include content-item-flex-item;
 
+        border: transparent solid 2px;
+        transition: border 1s ease-in-out;
+
         @media (min-width: $breakpoint-tablet) {
           flex-direction: column;
           text-align: center;
@@ -366,6 +369,10 @@ main {
           flex-grow: 4;
           flex-shrink: 1;
         }
+      }
+
+      .content-item:hover {
+        border: white solid 2px;
       }
     }
 
