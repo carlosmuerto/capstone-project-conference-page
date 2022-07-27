@@ -449,7 +449,7 @@ main section.features {
           justify-content: start;
   padding-bottom: 3rem;
   padding-top: 3rem;
-  background-color: whitesmoke;
+  background-color: white;
 }
 main section.features .title {
   -webkit-box-align: center;
@@ -614,4 +614,47 @@ main section.headline.headline-about .contact-info .email {
 }
 main section.testing h1 {
   color: #ec5242;
+}
+
+footer {
+  background-color: #272a32;
+  color: white;
+}
+footer .footer-content {
+  display: grid;
+  grid-template: auto/1fr;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+footer .footer-content .footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .footer-content .footer-logo .footer-img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+footer .footer-content .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 10%;
 }

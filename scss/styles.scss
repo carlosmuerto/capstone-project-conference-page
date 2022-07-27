@@ -340,7 +340,7 @@ main {
   section.features {
     @include section-flex;
 
-    background-color: whitesmoke;
+    background-color: white;
 
     .title {
       @include section-title;
@@ -482,6 +482,38 @@ main {
   section.testing {
     h1 {
       color: $accent-color;
+    }
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  color: white;
+
+  .footer-content {
+    display: grid;
+    grid-template: auto / 1fr;
+    gap: 1rem;
+    padding: 2rem 0;
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .footer-img {
+        display: block;
+        margin: auto;
+        width: 80%;
+      }
+    }
+
+    .footer-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 10%;
     }
   }
 }
