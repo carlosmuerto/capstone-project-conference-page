@@ -57,6 +57,38 @@ body {
   }
 }
 
+.social-top {
+  width: 100%;
+  background-color: $primary-color;
+  background-image: url("/assets/decorators/primary-color-background.jpg");
+  display: none;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+
+    li {
+      padding: 0.25rem  1rem;
+
+      .icon {
+        color: white;
+        font-size: 1rem;
+        transition: color 0.25s ease-in;
+      }
+
+      .icon:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
 header {
   z-index: 9999;
   align-items: flex-start;
@@ -67,6 +99,10 @@ header {
   padding: 1rem;
   position: fixed;
   width: 100%;
+
+  @media (min-width: $breakpoint-tablet) {
+    position: initial;
+  }
 
   .header-logo {
     position: relative;
@@ -104,7 +140,7 @@ header {
         text-align: center;
         border-bottom: rgba($secundary-color, 0.75) solid 1px;
 
-        > * {
+        * {
           color: $secundary-color;
           font-weight: bold;
           font-size: 1.25rem;
@@ -200,6 +236,10 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: calc(2rem + 1.5rem);
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: initial;
+  }
 
   .section-divider {
     width: 100%;
@@ -460,13 +500,39 @@ main {
   }
 
   section.headline {
-    align-items: center;
     background-color: whitesmoke;
     background-image: url("/assets/decorators/background-color-background.png");
     display: flex;
     flex-direction: column;
     height: calc(100vh - 2rem - 1.5rem);
     justify-content: center;
+    align-items: center;
+
+    .title {
+      h1 {
+        font-family: COCOGOOSE, sans-serif;
+      }
+
+      span {
+        font-size: 1.25rem;
+      }
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      .title {
+        h1 {
+          font-size: 3rem;
+          width: 60%;
+          text-transform: uppercase;
+        }
+
+        span {
+          font-size: 1.25rem;
+          width: 60%;
+          text-transform: uppercase;
+        }
+      }
+    }
 
     .box {
       border: white solid 2px;
@@ -474,6 +540,15 @@ main {
       font-size: 0.8rem;
       margin: 0.5rem;
       padding: 0.25rem;
+
+      @media (min-width: $breakpoint-tablet) {
+        border: white solid 4px;
+        border-radius: 3px;
+        font-size: 1rem;
+        margin: 2rem 1rem;
+        padding: 1rem 0.5rem;
+        max-width: 60%;
+      }
     }
 
     #date {
@@ -587,6 +662,11 @@ main {
   }
 
   section.headline.headline-home {
+    @media (min-width: $breakpoint-tablet) {
+      justify-content: center;
+      align-items: flex-start;
+    }
+
     .title {
       color: red;
     }
@@ -624,12 +704,6 @@ main {
         color: $accent-color;
         font-weight: bold;
       }
-    }
-  }
-
-  section.testing {
-    h1 {
-      color: $accent-color;
     }
   }
 }

@@ -28,6 +28,42 @@ body {
     padding-right: 10%;
   }
 }
+.social-top {
+  width: 100%;
+  background-color: #272a32;
+  background-image: url("/assets/decorators/primary-color-background.jpg");
+  display: none;
+}
+@media (min-width: 768px) {
+  .social-top {
+    display: block;
+  }
+}
+.social-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+}
+.social-top ul li {
+  padding: 0.25rem 1rem;
+}
+.social-top ul li .icon {
+  color: white;
+  font-size: 1rem;
+  -webkit-transition: color 0.25s ease-in;
+  transition: color 0.25s ease-in;
+}
+.social-top ul li .icon:hover {
+  color: #ec5242;
+}
+
 header {
   z-index: 9999;
   -webkit-box-align: start;
@@ -44,6 +80,11 @@ header {
   padding: 1rem;
   position: fixed;
   width: 100%;
+}
+@media (min-width: 768px) {
+  header {
+    position: initial;
+  }
 }
 header .header-logo {
   position: relative;
@@ -93,7 +134,7 @@ header nav.navbar ul li {
   text-align: center;
   border-bottom: rgba(211, 211, 211, 0.75) solid 1px;
 }
-header nav.navbar ul li > * {
+header nav.navbar ul li * {
   color: #d3d3d3;
   font-weight: bold;
   font-size: 1.25rem;
@@ -181,6 +222,11 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 3.5rem;
+}
+@media (min-width: 768px) {
+  main {
+    margin-top: initial;
+  }
 }
 main .section-divider {
   width: 100%;
@@ -589,9 +635,6 @@ main section.about-images .content .content-item .img .overlay .generated-name {
   text-align: center;
 }
 main section.headline {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: whitesmoke;
   background-image: url("/assets/decorators/background-color-background.png");
   display: -webkit-box;
@@ -605,6 +648,27 @@ main section.headline {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main section.headline .title h1 {
+  font-family: COCOGOOSE, sans-serif;
+}
+main section.headline .title span {
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  main section.headline .title h1 {
+    font-size: 3rem;
+    width: 60%;
+    text-transform: uppercase;
+  }
+  main section.headline .title span {
+    font-size: 1.25rem;
+    width: 60%;
+    text-transform: uppercase;
+  }
 }
 main section.headline .box {
   border: white solid 2px;
@@ -612,6 +676,16 @@ main section.headline .box {
   font-size: 0.8rem;
   margin: 0.5rem;
   padding: 0.25rem;
+}
+@media (min-width: 768px) {
+  main section.headline .box {
+    border: white solid 4px;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin: 2rem 1rem;
+    padding: 1rem 0.5rem;
+    max-width: 60%;
+  }
 }
 main section.headline #date {
   color: #272a32;
@@ -751,6 +825,16 @@ main section.features .more-btn button {
 main section.features .more-btn button .more-btn-chevron-down {
   color: #ec5242;
 }
+@media (min-width: 768px) {
+  main section.headline.headline-home {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 main section.headline.headline-home .title {
   color: red;
 }
@@ -797,9 +881,6 @@ main section.headline.headline-about .contact-info {
 main section.headline.headline-about .contact-info .email {
   color: #ec5242;
   font-weight: bold;
-}
-main section.testing h1 {
-  color: #ec5242;
 }
 
 footer {
