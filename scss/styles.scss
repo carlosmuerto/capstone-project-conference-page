@@ -298,11 +298,12 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
+            cursor: zoom-in;
 
             .generated-name {
               color: $secundary-color;
               font-size: 1.5rem;
+              padding: 0 2rem;
               text-align: center;
             }
           }
