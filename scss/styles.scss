@@ -26,6 +26,13 @@ body {
   padding-right: 1rem;
 }
 
+@media (min-width: $breakpoint-tablet) {
+  .wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
 header {
   z-index: 9999;
   align-items: flex-start;
@@ -274,8 +281,17 @@ main {
       gap: 0.25rem;
       grid-template: auto / 1fr;
 
+      @media (min-width: $breakpoint-tablet) {
+        grid-template: auto / repeat(5, 1fr);
+      }
+
       .content-item {
         @include content-item-flex-item;
+
+        @media (min-width: $breakpoint-tablet) {
+          flex-direction: column;
+          text-align: center;
+        }
 
         background-color: rgba($secundary-color, 0.2);
 
@@ -312,7 +328,7 @@ main {
       }
     }
 
-    .join-btn {
+    .categories-btn {
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -325,6 +341,10 @@ main {
         font-size: 1rem;
         padding: 1rem;
         width: 80%;
+
+        @media (min-width: $breakpoint-tablet) {
+          width: 20rem;
+        }
       }
     }
   }
