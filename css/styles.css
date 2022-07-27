@@ -5,6 +5,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.base {
+  display: none !important;
+}
+
 * > a {
   text-decoration: none;
 }
