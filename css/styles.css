@@ -27,7 +27,7 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-color: whitesmoke;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,7 @@ header nav.navbar {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  background-color: whitesmoke;
+  background-color: rgba(39, 42, 50, 0.75);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -53,15 +53,22 @@ header nav.navbar {
       -ms-flex-pack: start;
           justify-content: start;
   left: -100%;
+  top: 0;
   position: absolute;
   -webkit-transition: left 0.25s ease-in-out;
   transition: left 0.25s ease-in-out;
-  width: 100%;
+  width: calc(100% - 3rem);
 }
 header nav.navbar ul li {
   list-style: none;
   padding: 1rem;
   text-align: center;
+  border-bottom: rgba(211, 211, 211, 0.75) solid 1px;
+}
+header nav.navbar ul li > * {
+  color: #d3d3d3;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 header nav.navbar ul li#menu-btn-close {
   justify-self: end;

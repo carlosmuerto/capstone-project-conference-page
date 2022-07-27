@@ -28,7 +28,7 @@ body {
 header {
   z-index: 9999;
   align-items: flex-start;
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   line-height: 1rem;
@@ -38,20 +38,28 @@ header {
 
   nav.navbar {
     align-items: stretch;
-    background-color: whitesmoke;
+    background-color: rgba($primary-color, 0.75);
     flex-direction: column;
     height: 100vh;
     justify-content: start;
     left: -100%;
+    top: 0;
     position: absolute;
     transition: left 0.25s ease-in-out;
-    width: 100%;
+    width: calc(100% - 3rem);
 
     ul {
       li {
         list-style: none;
         padding: 1rem;
         text-align: center;
+        border-bottom: rgba($secundary-color, 0.75) solid 1px;
+
+        > * {
+          color: $secundary-color;
+          font-weight: bold;
+          font-size: 1.25rem;
+        }
       }
 
       li#menu-btn-close {
