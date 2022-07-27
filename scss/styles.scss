@@ -595,6 +595,13 @@ main {
       }
     }
 
+    .box#description {
+      a {
+        color: $accent-color;
+        font-weight: bold;
+      }
+    }
+
     .box {
       border: white solid 2px;
       border-radius: 2px;

@@ -749,6 +749,10 @@ main section.headline .title span {
     text-transform: uppercase;
   }
 }
+main section.headline .box#description a {
+  color: #ec5242;
+  font-weight: bold;
+}
 main section.headline .box {
   border: white solid 2px;
   border-radius: 2px;
