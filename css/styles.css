@@ -734,6 +734,11 @@ main section.features .content {
   gap: 0.25rem;
   grid-template: auto/1fr;
 }
+@media (min-width: 768px) {
+  main section.features .content {
+    grid-template: auto/repeat(2, 1fr);
+  }
+}
 main section.features .content .content-item {
   -ms-flex-line-pack: center;
       align-content: center;
@@ -761,6 +766,16 @@ main section.features .content .content-item .img {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+}
+@media (min-width: 768px) {
+  main section.features .content .content-item .img {
+    grid-template: auto/repeat(2, 1fr);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 12rem;
+            flex: 0 0 12rem;
+    min-width: 12rem;
+    min-height: 12rem;
+  }
 }
 main section.features .content .content-item .img img.decorator-img {
   background-color: #272a32;
@@ -821,6 +836,11 @@ main section.features .more-btn button {
   font-size: 1rem;
   padding: 1rem;
   width: 100%;
+}
+@media (min-width: 768px) {
+  main section.features .more-btn button {
+    max-width: 40%;
+  }
 }
 main section.features .more-btn button .more-btn-chevron-down {
   color: #ec5242;
