@@ -530,6 +530,16 @@ main {
     align-items: center;
 
     .title {
+      color: $accent-color;
+      background:
+        linear-gradient(rgba($accent-color, 0.5)),
+        url("/assets/about/image/A-Completely-unrelated-random-content.jpg");
+      background-size: cover;
+
+      /* stylelint-disable-next-line csstree/validator */
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
       h1 {
         font-family: COCOGOOSE, sans-serif;
       }
@@ -588,6 +598,8 @@ main {
 
     .title {
       @include section-title;
+
+      font-family: COCOGOOSE, sans-serif;
 
       h2 {
         color: $primary-color;
@@ -704,7 +716,7 @@ main {
     }
 
     .title {
-      color: red;
+      font-family: COCOGOOSE, sans-serif;
     }
   }
 
