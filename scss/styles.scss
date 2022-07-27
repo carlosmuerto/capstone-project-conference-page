@@ -393,8 +393,6 @@ main {
   section.partner {
     @include section-flex;
 
-    gap: 2rem;
-
     .title {
       @include section-title;
 
@@ -405,12 +403,22 @@ main {
     }
 
     .content {
-      display: grid;
+      display: flex;
       gap: 0.25rem;
-      grid-template: auto / 1fr;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+
+      @media (min-width: $breakpoint-tablet) {
+        flex-flow: row wrap;
+      }
 
       .content-item {
         @include content-item-flex-item;
+
+        @media (min-width: $breakpoint-tablet) {
+          width: 20%;
+        }
 
         .img {
           display: flex;

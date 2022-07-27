@@ -468,7 +468,6 @@ main section.partner {
           justify-content: start;
   padding-bottom: 3rem;
   padding-top: 3rem;
-  gap: 2rem;
 }
 main section.partner .title {
   -webkit-box-align: center;
@@ -489,9 +488,28 @@ main section.partner .title h2 {
   text-align: center;
 }
 main section.partner .content {
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 0.25rem;
-  grid-template: auto/1fr;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 768px) {
+  main section.partner .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
 }
 main section.partner .content .content-item {
   -ms-flex-line-pack: center;
@@ -505,6 +523,11 @@ main section.partner .content .content-item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (min-width: 768px) {
+  main section.partner .content .content-item {
+    width: 20%;
+  }
 }
 main section.partner .content .content-item .img {
   display: -webkit-box;
