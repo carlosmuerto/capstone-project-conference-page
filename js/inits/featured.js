@@ -56,6 +56,7 @@ function showMoreFeaturePersons() {
 }
 
 export default function initfeaturedPersons() {
+  if (!featuredContent) return;
   buildFeatureContent();
 
   featuredPersonsMoreBtn.addEventListener('click', showMoreFeaturePersons);
