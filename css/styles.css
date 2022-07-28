@@ -843,6 +843,9 @@ main section.features .content .content-item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 main section.features .content .content-item .img {
   -webkit-box-flex: 0;

@@ -663,6 +663,8 @@ main {
       .content-item {
         @include content-item-flex-item;
 
+        justify-content: start;
+
         .img {
           flex: 0 0 7rem;
           min-width: 7rem;
