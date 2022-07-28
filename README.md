@@ -26,7 +26,27 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://carlosmuerto.github.io/capstone-project-conference-page/)
+
+## Video Presentation
+
+[![Presentation of Capstone Project:Conference Page](https://cdn.loom.com/sessions/thumbnails/1c3bd90055704b12836d424c040530ba-with-play.gif)](https://www.loom.com/share/1c3bd90055704b12836d424c040530ba "Presentation of Capstone Project:Conference Page")
+
+## Getting Started
+
+### To launch the project locally:
+
+#### Step 1:
+- Clone this repo locally using git and the following git command
+
+```bash
+git clone https://github.com/carlosmuerto/capstone-project-conference-page.git
+```
+
+#### Step 2:
+
+- Run index.html file in your browser or run a life server
+- Use developer tools in order to view Mobile version
 
 ## Authors
 
