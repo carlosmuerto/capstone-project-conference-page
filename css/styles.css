@@ -397,6 +397,7 @@ main section.categories .content {
 @media (min-width: 768px) {
   main section.categories .content {
     grid-template: auto/repeat(5, 1fr);
+    margin: 0 5%;
   }
 }
 main section.categories .content .content-item {
@@ -421,6 +422,8 @@ main section.categories .content .content-item {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    padding: 1rem;
+    gap: 0.5rem;
   }
 }
 main section.categories .content .content-item .img {
@@ -450,7 +453,7 @@ main section.categories .content .content-item h3 {
       flex-grow: 1;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   min-width: 4rem;
   text-transform: capitalize;
 }
@@ -464,6 +467,7 @@ main section.categories .content .content-item p.summary {
           flex-grow: 4;
   -ms-flex-negative: 1;
       flex-shrink: 1;
+  font-size: 0.9rem;
 }
 main section.categories .content .content-item.content-item-with-hover {
   -webkit-transition: border 1s ease-in-out;
@@ -496,6 +500,10 @@ main section.categories .categories-btn button {
 @media (min-width: 768px) {
   main section.categories .categories-btn button {
     width: 20rem;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    text-underline-offset: 0.25rem;
   }
 }
 main section.partner {

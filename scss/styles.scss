@@ -358,6 +358,7 @@ main {
 
       @media (min-width: $breakpoint-tablet) {
         grid-template: auto / repeat(5, 1fr);
+        margin: 0 5%;
       }
 
       .content-item {
@@ -369,6 +370,8 @@ main {
         @media (min-width: $breakpoint-tablet) {
           flex-direction: column;
           text-align: center;
+          padding: 1rem;
+          gap: 0.5rem;
         }
 
         .img {
@@ -390,7 +393,7 @@ main {
           flex: 1;
           flex-grow: 1;
           flex-shrink: 0;
-          font-size: 0.9rem;
+          font-size: 1rem;
           min-width: 4rem;
           text-transform: capitalize;
         }
@@ -400,6 +403,7 @@ main {
           flex: 5;
           flex-grow: 4;
           flex-shrink: 1;
+          font-size: 0.9rem;
         }
       }
 
@@ -428,6 +432,10 @@ main {
 
         @media (min-width: $breakpoint-tablet) {
           width: 20rem;
+          background-color: transparent;
+          text-decoration: underline;
+          font-size: 1.25rem;
+          text-underline-offset: 0.25rem;
         }
       }
     }
