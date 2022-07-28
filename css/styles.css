@@ -36,7 +36,6 @@ body {
 .social-top {
   width: 100%;
   background-color: #272a32;
-  background-image: url("/assets/decorators/primary-color-background.jpg");
   display: none;
 }
 @media (min-width: 768px) {
@@ -55,17 +54,19 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   list-style: none;
+  padding: 0 1rem;
 }
 .social-top ul li {
-  padding: 0.25rem 1rem;
+  padding: 0.25rem;
 }
-.social-top ul li .icon {
+.social-top ul li .list-item {
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   -webkit-transition: color 0.25s ease-in;
   transition: color 0.25s ease-in;
+  text-transform: capitalize;
 }
-.social-top ul li .icon:hover {
+.social-top ul li .list-item:hover {
   color: #ec5242;
 }
 
