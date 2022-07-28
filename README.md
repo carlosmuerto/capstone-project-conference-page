@@ -1,6 +1,6 @@
 # Capstone Project - Conference Page
 
-> In this capstone project I are going to build is based on an online website for a conference. Microverse provide some design guidelines for me to create the website, but I must personalize the content, i.e., instead of a conference you can build a website for a concert or for a web development course. It's very important the I personalize my project so that I have something unique in my portfolio to share with potential employers during job searching.
+In this capstone project I are going to build is based on an online website for a conference. Microverse provide some design guidelines for me to create the website, but I must personalize the content, i.e., instead of a conference you can build a website for a concert or for a web development course. It's very important the I personalize my project so that I have something unique in my portfolio to share with potential employers during job searching.
 
 ![screenshot](./app_screenshot.png)
 
@@ -27,6 +27,26 @@
 ## Live Demo
 
 [Live Demo Link](https://carlosmuerto.github.io/capstone-project-conference-page/)
+
+## Video Presentation
+
+[![Presentation of Capstone Project:Conference Page](https://cdn.loom.com/sessions/thumbnails/1c3bd90055704b12836d424c040530ba-with-play.gif)](https://www.loom.com/share/1c3bd90055704b12836d424c040530ba "Presentation of Capstone Project:Conference Page")
+
+## Getting Started
+
+### To launch the project locally:
+
+#### Step 1:
+- Clone this repo locally using git and the following git command
+
+```bash
+git clone https://github.com/carlosmuerto/capstone-project-conference-page.git
+```
+
+#### Step 2:
+
+- Run index.html file in your browser or run a life server
+- Use developer tools in order to view Mobile version
 
 ## Authors
 
