@@ -375,7 +375,7 @@ main {
     @include section-flex;
 
     background-color: $primary-color;
-    background-image: url("/assets/decorators/primary-color-background.jpg");
+    background-image: url("https://carlosmuerto.github.io/capstone-project-conference-page/assets/decorators/primary-color-background.jpg");
 
     .title {
       @include section-title;
@@ -597,7 +597,7 @@ main {
 
   section.headline {
     background-color: whitesmoke;
-    background-image: url("/assets/decorators/background-color-background.png");
+    background-image: url("https://carlosmuerto.github.io/capstone-project-conference-page/assets/decorators/background-color-background.png");
     display: flex;
     flex-direction: column;
     height: calc(100vh - 2rem - 1.5rem);
@@ -608,7 +608,7 @@ main {
       color: $accent-color;
       background:
         linear-gradient(rgba($accent-color, 0.5)),
-        url("/assets/about/image/A-Completely-unrelated-random-content.jpg");
+        url("https://carlosmuerto.github.io/capstone-project-conference-page/assets/about/image/A-Completely-unrelated-random-content.jpg");
       background-size: cover;
 
       /* stylelint-disable-next-line csstree/validator */
