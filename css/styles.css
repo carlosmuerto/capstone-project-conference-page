@@ -412,7 +412,7 @@ main section.categories {
   padding-bottom: 3rem;
   padding-top: 3rem;
   background-color: #272a32;
-  background-image: url("/assets/decorators/primary-color-background.jpg");
+  background-image: url("https://carlosmuerto.github.io/capstone-project-conference-page/assets/decorators/primary-color-background.jpg");
 }
 main section.categories .title {
   -webkit-box-align: center;
@@ -760,7 +760,7 @@ main section.about-images .content .content-item .img .overlay:hover {
 }
 main section.headline {
   background-color: whitesmoke;
-  background-image: url("/assets/decorators/background-color-background.png");
+  background-image: url("https://carlosmuerto.github.io/capstone-project-conference-page/assets/decorators/background-color-background.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -778,8 +778,8 @@ main section.headline {
 }
 main section.headline .title {
   color: #ec5242;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 82, 66, 0.5))), url("/assets/about/image/A-Completely-unrelated-random-content.jpg");
-  background: linear-gradient(rgba(236, 82, 66, 0.5)), url("/assets/about/image/A-Completely-unrelated-random-content.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 82, 66, 0.5))), url("https://carlosmuerto.github.io/capstone-project-conference-page/assets/about/image/A-Completely-unrelated-random-content.jpg");
+  background: linear-gradient(rgba(236, 82, 66, 0.5)), url("https://carlosmuerto.github.io/capstone-project-conference-page/assets/about/image/A-Completely-unrelated-random-content.jpg");
   background-size: cover;
   /* stylelint-disable-next-line csstree/validator */
   -webkit-background-clip: text;
